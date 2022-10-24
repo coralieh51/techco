@@ -1,0 +1,388 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#hero aside p {
+  width: 20vw;
+  background-color: #f2f2f2;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.content {
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+/******************************** MENU NAV DROITE ******************************/
+#menu {
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#mailAddress {
+  color: grey;
+}
+
+#mailAddress::after {
+  position: absolute;
+  top: 40px;
+  left: 200px;
+  content: " | ";
+  font-size: 25px;
+}
+
+#menu i {
+  color: #ed7336;
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+#requestButton > i {
+  color: white;
+}
+
+#menu #requestButton {
+  color: white;
+  height: 65px;
+  background-color: #3498db;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+#menu #justAsk {
+  opacity: 0.7;
+}
+
+#hero ul {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#hero li {
+  width: 200px;
+  list-style: none;
+  text-align: center;
+}
+
+/******************************** MENU NAV PRINCIPALE ******************************/
+nav {
+  position: relative;
+  padding-left: 8%;
+  height: 68px;
+  min-width: 970px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+  text-align: center;
+}
+
+#mainNav {
+  z-index: 10;
+  min-width: 600px;
+  height: 68px;
+  position: absolute;
+  background-color: #363b4c;
+  clip-path: polygon(0 0, 95% 0%, 100% 100%, 0% 100%);
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav a {
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:last-child {
+  border: none;
+  padding-right: 10px;
+}
+
+/******************************** SOCIAL NETWORK ******************************/
+#socialNetwork {
+  position: absolute;
+  right: 0;
+  z-index: 9;
+  height: 68px;
+  background-color: #3498db;
+  width: 45%;
+  text-align: center;
+}
+
+#socialNetwork i {
+  font-size: 1.7em;
+  margin: 12px 6px;
+  padding: 10px;
+  background-color: #363b4c;
+  color: #3498db;
+  border-radius: 3px;
+}
+
+.socialIcons {
+  min-width: 620px;
+}
+
+#socialNetwork .fa-search {
+  background: none;
+  color: #363b4c;
+}
+
+/******************************** MAIN CONTRACTOR ******************************/
+#mainContractor {
+  width: 100%;
+  position: relative;
+  height: 620px;
+  top: -34px;
+  background-color: white;
+  background: url("assets/images/mining-excavator.jpg") no-repeat;
+  background-size: cover;
+}
+
+#textContractor {
+  border-radius: 2px;
+  background-color: rgba(50, 50, 50, 0.3);
+  position: relative;
+  top: 100px;
+  left: 8%;
+  width: 34vw;
+  min-width: 300px;
+  height: 460px;
+  padding: 35px;
+}
+
+hr {
+  position: absolute;
+  top: 170px;
+  width: 30vw;
+  color: #2f2f2f;
+}
+
+#textContractor p {
+  font-size: 1em;
+  width: 30vw;
+  color: white;
+  position: absolute;
+  top: 180px;
+}
+
+#textContractor a {
+  font-size: 0.7em;
+  font-weight: 800;
+  position: relative;
+  top: 350px;
+  color: #2f2f2f;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 5%;
+  padding: 20px;
+  border-radius: 2px;
+  background-color: #efefef;
+}
+
+#textContractor i {
+  font-size: 1.5em;
+  font-weight: 800;
+  color: #2f2f2f;
+  padding-right: 10px;
+}
+
+#textContractor p + a {
+  background-color: #fec24b;
+}
+
+#mainContractor h1 {
+  font-size: 3em;
+  position: absolute;
+  color: white;
+}
+
+/******************************** SECTION GALLERY ******************************/
+section {
+  background-color: white;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+section h2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.galery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 6%;
+  width: 26%;
+}
+
+.item header,
+.item p {
+  text-align: left;
+  padding: 3%;
+}
+
+.item img {
+  width: 120%;
+}
+
+.item a,
+#fixedImage a {
+  color: white;
+  line-height: 30px;
+  align-self: flex-end;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-align: center;
+  background-color: #3498db;
+  margin: 3% 0 3% 3%;
+  border-radius: 2px;
+}
+
+/******************************** SECTION FEATURED PROJECTS ******************************/
+
+#featuredProjects {
+  color: white;
+}
+
+#featuredProjects aside,
+#featuredProjects h2 {
+  color: black;
+}
+
+#featuredProjects h2 {
+  padding-bottom: 100px;
+}
+
+#featuredProjects p {
+  position: absolute;
+  bottom: 80px;
+  padding-left: 10%;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#featuredProjects .item {
+  position: relative;
+}
+
+#featuredProjects header {
+  text-transform: uppercase;
+  position: absolute;
+  font-size: 1rem;
+  font-weight: bold;
+  bottom: 110px;
+  padding-left: 10%;
+}
+
+/******************************** SECTION IMAGE FIXED ******************************/
+
+#fixedImage {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: white;
+  background: url("assets/images/ventilator.jpg") no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 300px;
+  padding: 3% 3% 0 3%;
+}
+
+#fixedImage a {
+  margin: 0;
+  color: white;
+  text-decoration: none;
+  background-color: #3498db;
+  font-size: 0.8rem;
+  padding: 15px 20px;
+}
+
+#fixedImage h2 {
+  position: absolute;
+  top: 110px;
+}
+
+/******************************** SECTION EMPLOYEES ******************************/
+
+#employees {
+  width: 100%;
+  background-color: #f2f2f2;
+  padding: 3% 10%;
+}
+
+#employees .title {
+  width: 100%;
+  margin: auto;
+}
+
+#employees h2 {
+  padding-bottom: 20px;
+}
+
+#employees .galery:not(:first-child) {
+  display: flex;
+  justify-content: space-between;
+}
+
+#employees h3,
+#employees h4,
+#employees p {
+  background: white;
+}
+
+#employees p {
+  padding: 5%;
+}
+
+#employees h3 {
+  padding: 5% 0 2% 5%;
+}
+
+#employees h4 {
+  padding: 0 0 0 5%;
+  color: #aaa;
+}
+
+#employees img {
+  margin: 0;
+  width: 100%;
+}
+
+#employees a {
+  display: block;
+  text-align: left;
+  padding: 0;
+  background: none;
+  color: #2f2f2f;
+  margin: 0;
+}
+
+#employees i {
+  padding-right: 20px;
+  padding-top: 20px;
+}
